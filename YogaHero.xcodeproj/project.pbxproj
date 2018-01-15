@@ -7,21 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		650DD27E200C272400EF538A /* yogaone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 650DD27D200C272400EF538A /* yogaone.jpg */; };
 		652A6F8A200AEFCE00ED6F7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652A6F89200AEFCE00ED6F7E /* AppDelegate.swift */; };
 		652A6F8C200AEFCE00ED6F7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652A6F8B200AEFCE00ED6F7E /* ViewController.swift */; };
 		652A6F8F200AEFCE00ED6F7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652A6F8D200AEFCE00ED6F7E /* Main.storyboard */; };
 		652A6F91200AEFCE00ED6F7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 652A6F90200AEFCE00ED6F7E /* Assets.xcassets */; };
 		652A6F94200AEFCE00ED6F7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652A6F92200AEFCE00ED6F7E /* LaunchScreen.storyboard */; };
-		652A6F9C200B3BE800ED6F7E /* yogaone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 652A6F9B200B3BE700ED6F7E /* yogaone.jpg */; };
-		652A6F9E200B3D2500ED6F7E /* Yoga+Ninja+Warrior.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 652A6F9D200B3D2500ED6F7E /* Yoga+Ninja+Warrior.jpeg */; };
 		652A6FA0200B431E00ED6F7E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652A6F9F200B431E00ED6F7E /* SecondViewController.swift */; };
 		65555498200C2F840058E02A /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65555497200C2F840058E02A /* ThirdViewController.swift */; };
-		6555549A200C31AB0058E02A /* yogatwo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65555499200C31AB0058E02A /* yogatwo.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		650DD27D200C272400EF538A /* yogaone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = yogaone.jpg; path = "../../../../yoga image/yogaone.jpg"; sourceTree = "<group>"; };
 		652A6F86200AEFCE00ED6F7E /* YogaHero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YogaHero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		652A6F89200AEFCE00ED6F7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		652A6F8B200AEFCE00ED6F7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,11 +24,8 @@
 		652A6F90200AEFCE00ED6F7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		652A6F93200AEFCE00ED6F7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		652A6F95200AEFCE00ED6F7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		652A6F9B200B3BE700ED6F7E /* yogaone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = yogaone.jpg; path = "../../../../yoga image/yogaone.jpg"; sourceTree = "<group>"; };
-		652A6F9D200B3D2500ED6F7E /* Yoga+Ninja+Warrior.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Yoga+Ninja+Warrior.jpeg"; path = "../../../../Yoga+Ninja+Warrior.jpeg"; sourceTree = "<group>"; };
 		652A6F9F200B431E00ED6F7E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		65555497200C2F840058E02A /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
-		65555499200C31AB0058E02A /* yogatwo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = yogatwo.jpg; path = "../../../../yoga image/yogatwo.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,10 +63,6 @@
 				652A6F9F200B431E00ED6F7E /* SecondViewController.swift */,
 				65555497200C2F840058E02A /* ThirdViewController.swift */,
 				652A6F8D200AEFCE00ED6F7E /* Main.storyboard */,
-				652A6F9D200B3D2500ED6F7E /* Yoga+Ninja+Warrior.jpeg */,
-				652A6F9B200B3BE700ED6F7E /* yogaone.jpg */,
-				650DD27D200C272400EF538A /* yogaone.jpg */,
-				65555499200C31AB0058E02A /* yogatwo.jpg */,
 				652A6F90200AEFCE00ED6F7E /* Assets.xcassets */,
 				652A6F92200AEFCE00ED6F7E /* LaunchScreen.storyboard */,
 				652A6F95200AEFCE00ED6F7E /* Info.plist */,
@@ -141,13 +129,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				652A6F9C200B3BE800ED6F7E /* yogaone.jpg in Resources */,
 				652A6F94200AEFCE00ED6F7E /* LaunchScreen.storyboard in Resources */,
-				650DD27E200C272400EF538A /* yogaone.jpg in Resources */,
-				6555549A200C31AB0058E02A /* yogatwo.jpg in Resources */,
 				652A6F91200AEFCE00ED6F7E /* Assets.xcassets in Resources */,
 				652A6F8F200AEFCE00ED6F7E /* Main.storyboard in Resources */,
-				652A6F9E200B3D2500ED6F7E /* Yoga+Ninja+Warrior.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +283,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WZ37CA2TWJ;
 				INFOPLIST_FILE = YogaHero/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "i.e.-com.codingdojo.YogaHero";
@@ -313,6 +298,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WZ37CA2TWJ;
 				INFOPLIST_FILE = YogaHero/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "i.e.-com.codingdojo.YogaHero";
