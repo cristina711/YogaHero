@@ -20,10 +20,10 @@ let opQueue = OperationQueue()
 
 class ViewController: UIViewController {
     
-    var motionManager = CMMotionManager()
-    let opQueue = OperationQueue()
-    var audioPlayer = AVAudioPlayer()
-
+//    var motionManager = CMMotionManager()
+//    let opQueue = OperationQueue()
+//    var audioPlayer = AVAudioPlayer()
+    var containsAudioHard = false;
     
     var poseimages = [""]
 
@@ -38,7 +38,9 @@ class ViewController: UIViewController {
     
     
     @IBAction func buttonPressed(_ sender: UIButton){
-        audioPlayer.play()
+        if containsAudioHard{
+            audioPlayer.play()
+        }
         
        performSegue(withIdentifier: "segue", sender: self)
     }
@@ -49,12 +51,11 @@ class ViewController: UIViewController {
         if motionManager.isDeviceMotionAvailable {
             print("We can detect device motion")
             do{
+                containsAudioHard = true
                 audioPlayer = try AVAudioPlayer(contentsOf:URL.init(fileURLWithPath:  Bundle.main.path(forResource: "backgroundMusic", ofType: "m4a")!))
                 audioPlayer.prepareToPlay()
-            }
-                
-                
-            catch{
+                audioPlayer.play()
+            }catch{
                 print(error)
             }
             startReadingMotionData()
