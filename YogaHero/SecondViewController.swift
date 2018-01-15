@@ -7,50 +7,51 @@
 //
 
 import UIKit
+import CoreMotion
 
 class SecondViewController: UIViewController {
     
+    var motionManager = CMMotionManager()
+    let opQueue = OperationQueue()
+    
+    var challengeCount = 1
+    let poses = ["yogaone", "yogatwo", "yogathree", "yogafour", "yogafive", "yogasix", "yogaseven", "yogaeight", "yoganine"]
+    var poseIndex = 0
     
     @IBOutlet weak var levelLabel: UILabel!
     
-    
-
-    @IBOutlet weak var yogaoneImage: UIImageView!
-    
+    @IBOutlet weak var poseImage: UIImageView!
     
     @IBOutlet weak var gameStateLabel: UILabel!
     
     
     @IBAction func nextButton(_ sender: UIButton) {
-        
-        performSegue(withIdentifier: "seguethree", sender: self)
-    
+        if poseIndex < poses.count-1 {
+            poseIndex += 1
+            challengeCount += 1
+        } else {
+            poseIndex = 0
+            challengeCount = 1
+        }
+        updateUI()
     
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        levelLabel.text = "YOGA HERO CHALLENGE 1 "
+        updateUI()
         
-       
-
         // Do any additional setup after loading the view.
     }
 
+    
+    func updateUI() {
+        levelLabel.text = "YOGA HERO CHALLENGE " + String(challengeCount)
+        poseImage.image = UIImage(named: poses[poseIndex])
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -9,20 +9,12 @@
 import UIKit
 import CoreMotion
 
-
-
-var motionManager = CMMotionManager()
-let opQueue = OperationQueue()
-
 // variables that need in all the views  have to be here for global use 
 
 class ViewController: UIViewController {
     
     var motionManager = CMMotionManager()
     let opQueue = OperationQueue()
-
-    
-    var poseimages = [""]
 
     @IBOutlet weak var gameNameLabel: UILabel!
     

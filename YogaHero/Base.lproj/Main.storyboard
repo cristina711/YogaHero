@@ -122,7 +122,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="nZm-B9-4KL"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <color key="textColor" red="0.18889821909999999" green="1" blue="0.90509767600000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -155,6 +155,7 @@
                     <connections>
                         <outlet property="gameStateLabel" destination="x9W-F1-Ie5" id="eX4-bY-pDC"/>
                         <outlet property="levelLabel" destination="MdR-I8-Mzp" id="cF0-hG-stI"/>
+                        <outlet property="poseImage" destination="W1c-Jr-sJG" id="d8H-Ll-5uY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CyD-xm-1Qn" userLabel="First Responder" sceneMemberID="firstResponder"/>
