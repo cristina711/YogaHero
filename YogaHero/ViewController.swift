@@ -8,7 +8,9 @@
 
 import UIKit
 import CoreMotion
+import AVFoundation
 
+var audioPlayer = AVAudioPlayer()
 
 
 var motionManager = CMMotionManager()
@@ -20,6 +22,7 @@ class ViewController: UIViewController {
     
     var motionManager = CMMotionManager()
     let opQueue = OperationQueue()
+    var audioPlayer = AVAudioPlayer()
 
     
     var poseimages = [""]
@@ -35,6 +38,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func buttonPressed(_ sender: UIButton){
+        audioPlayer.play()
         
        performSegue(withIdentifier: "segue", sender: self)
     }
@@ -44,11 +48,21 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         if motionManager.isDeviceMotionAvailable {
             print("We can detect device motion")
+            do{
+                audioPlayer = try AVAudioPlayer(contentsOf:URL.init(fileURLWithPath:  Bundle.main.path(forResource: "backgroundMusic", ofType: "m4a")!))
+                audioPlayer.prepareToPlay()
+            }
+                
+                
+            catch{
+                print(error)
+            }
             startReadingMotionData()
         }
         else {
             print("We cannot detect device motion")
         }
+        
     }
 
     
@@ -107,7 +121,3 @@ class ViewController: UIViewController {
 //        super.didReceiveMemoryWarning()
 //        // Dispose of any resources that can be recreated.
 //    }
-
-
-
-
