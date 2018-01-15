@@ -9,9 +9,30 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    
+    
+    @IBOutlet weak var levelLabel: UILabel!
+    
+    
 
+    @IBOutlet weak var yogaoneImage: UIImageView!
+    
+    
+    @IBOutlet weak var gameStateLabel: UILabel!
+    
+    
+    @IBAction func nextButton(_ sender: UIButton) {
+        
+        performSegue(withIdentifier: "seguethree", sender: self)
+    
+    
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        levelLabel.text = "YOGA HERO CHALLENGE 1 "
+        
+       
 
         // Do any additional setup after loading the view.
     }
