@@ -11,21 +11,12 @@ import CoreMotion
 import AVFoundation
 
 var audioPlayer = AVAudioPlayer()
-
-
 var motionManager = CMMotionManager()
 let opQueue = OperationQueue()
 
-// variables that need in all the views  have to be here for global use 
-
 class ViewController: UIViewController {
     
-//    var motionManager = CMMotionManager()
-//    let opQueue = OperationQueue()
-//    var audioPlayer = AVAudioPlayer()
     var containsAudioHard = false;
-    
-    var poseimages = [""]
 
     @IBOutlet weak var gameNameLabel: UILabel!
     
@@ -100,12 +91,7 @@ class ViewController: UIViewController {
                         print ("No change detected")
                     }
                 }
-                
-                
-                //                print ("Pitch: ", self.degrees(mydata.attitude.pitch))
-                //                print ("Roll: ", self.degrees(mydata.attitude.roll))
-                //                print ("Yaw: ", self.degrees(mydata.attitude.yaw))
-                
+
             }
         }
     }
