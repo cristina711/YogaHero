@@ -8,8 +8,24 @@
 
 import UIKit
 
+
+    
+
+
+
 class ThirdViewController: UIViewController {
 
+    @IBOutlet weak var levelLabeltwo: UILabel!
+    
+    
+    @IBOutlet weak var leveltwoImage: UIImageView!
+    
+    
+    @IBOutlet weak var pgthreeStateLabel: UILabel!
+    
+    
+    @IBOutlet weak var buttonPerssed: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
