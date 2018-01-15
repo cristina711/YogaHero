@@ -77,8 +77,6 @@ class ViewController: UIViewController {
                         print ("No change detected")
                     }
                 }
-                
-                
                 //                print ("Pitch: ", self.degrees(mydata.attitude.pitch))
                 //                print ("Roll: ", self.degrees(mydata.attitude.roll))
                 //                print ("Yaw: ", self.degrees(mydata.attitude.yaw))
