@@ -54,14 +54,43 @@ class ViewController: UIViewController {
     
     func startReadingMotionData() {
         // set read speed
-        motionManager.deviceMotionUpdateInterval = 1
+        motionManager.deviceMotionUpdateInterval = 3
         // start reading
+        var initial = false
+        var myPitch: Double?
+        var myRoll: Double?
+        var myYaw: Double?
         motionManager.startDeviceMotionUpdates(to: opQueue) {
             (data: CMDeviceMotion?, error: Error?) in
             
             if let mydata = data {
-                print("mydata", mydata.attitude)
-                print("pitch", self.degrees(mydata.attitude.pitch))
+                if initial == false {
+                    myPitch = self.degrees(mydata.attitude.pitch)
+                    myRoll = self.degrees(mydata.attitude.roll)
+                    myYaw = self.degrees(mydata.attitude.yaw)
+                    initial = true
+                    print ("Pitch: ", self.degrees(mydata.attitude.pitch))
+                    print ("Roll: ", self.degrees(mydata.attitude.roll))
+                    print ("Yaw: ", self.degrees(mydata.attitude.yaw))
+                } else {
+                    if abs(myPitch! - self.degrees(mydata.attitude.pitch)) > 5 {
+                        print ("Pitch", self.degrees(mydata.attitude.pitch))
+                    }
+                    if abs(myRoll! - self.degrees(mydata.attitude.roll)) > 5 {
+                        print ("Roll", self.degrees(mydata.attitude.roll))
+                    }
+                    if abs(myYaw! - self.degrees(mydata.attitude.yaw)) > 5 {
+                        print ("Yaw", self.degrees(mydata.attitude.yaw))
+                    } else {
+                        print ("No change detected")
+                    }
+                }
+                
+                
+                //                print ("Pitch: ", self.degrees(mydata.attitude.pitch))
+                //                print ("Roll: ", self.degrees(mydata.attitude.roll))
+                //                print ("Yaw: ", self.degrees(mydata.attitude.yaw))
+                
             }
         }
     }
