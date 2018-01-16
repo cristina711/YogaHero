@@ -79,13 +79,13 @@ class ViewController: UIViewController {
                     print ("Roll: ", self.degrees(mydata.attitude.roll))
                     print ("Yaw: ", self.degrees(mydata.attitude.yaw))
                 } else {
-                    if abs(myPitch! - self.degrees(mydata.attitude.pitch)) > 5 {
+                    if abs(myPitch! - self.degrees(mydata.attitude.pitch)) > 4 {
                         print ("Pitch", self.degrees(mydata.attitude.pitch))
                     }
-                    if abs(myRoll! - self.degrees(mydata.attitude.roll)) > 5 {
+                    if abs(myRoll! - self.degrees(mydata.attitude.roll)) > 4 {
                         print ("Roll", self.degrees(mydata.attitude.roll))
                     }
-                    if abs(myYaw! - self.degrees(mydata.attitude.yaw)) > 5 {
+                    if abs(myYaw! - self.degrees(mydata.attitude.yaw)) > 4 {
                         print ("Yaw", self.degrees(mydata.attitude.yaw))
                     } else {
                         print ("No change detected")
