@@ -15,7 +15,17 @@ class SecondViewController: UIViewController {
     let opQueue = OperationQueue()
     
     var challengeCount = 1
-    let poses = ["yogaone", "yogatwo", "yogathree", "yogafour", "yogafive", "yogasix", "yogaseven", "yogaeight", "yoganine"]
+    let poses = [
+        
+        ("yogaone","place phone on your hand face-up"),
+        ("yogatwo", "place phone between your hands"),
+        ("yogafive", "place phone on your non-dominant hand face-up"),
+        ("yogaeight","place phone on your stomach"),
+        ("yoganine", "place phone on your knee")
+    ]
+    
+    
+    
     var poseIndex = 0
     
     @IBOutlet weak var levelLabel: UILabel!
@@ -47,7 +57,8 @@ class SecondViewController: UIViewController {
     
     func updateUI() {
         levelLabel.text = "YOGA HERO CHALLENGE " + String(challengeCount)
-        poseImage.image = UIImage(named: poses[poseIndex])
+        poseImage.image = UIImage(named: poses[poseIndex].0)
+        gameStateLabel.text = poses[poseIndex].1
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
