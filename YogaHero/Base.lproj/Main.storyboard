@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad12_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="YogaHero" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="READY? " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkm-yC-Tz5">
-                                <rect key="frame" x="107" y="464" width="161" height="48"/>
+                                <rect key="frame" x="431.5" y="1163" width="161" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="INv-vs-cgY"/>
                                     <constraint firstAttribute="width" constant="161" id="i8p-yE-fgE"/>
@@ -29,7 +29,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jbi-qt-Q3g">
-                                <rect key="frame" x="156" y="531" width="63" height="63"/>
+                                <rect key="frame" x="480.5" y="1230" width="63" height="63"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="7ac-dv-hhq"/>
                                     <constraint firstAttribute="width" constant="63" id="YfJ-ru-y6N"/>
@@ -44,7 +44,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOGA HERO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ks-IF-65u">
-                                <rect key="frame" x="70" y="44" width="235" height="48"/>
+                                <rect key="frame" x="394.5" y="44" width="235" height="48"/>
                                 <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="0.47359267979452052" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="235" id="Hry-g8-hWw"/>
@@ -55,7 +55,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" image="Yoga+Ninja+Warrior" translatesAutoresizingMaskIntoConstraints="NO" id="7SQ-qg-ppy">
-                                <rect key="frame" x="16" y="100" width="343" height="356"/>
+                                <rect key="frame" x="16" y="100" width="992" height="1055"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -92,18 +92,13 @@
             <objects>
                 <viewController id="8wD-9b-szx" customClass="SecondViewController" customModule="YogaHero" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4my-ds-QIE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pose Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9W-F1-Ie5">
-                                <rect key="frame" x="33.5" y="479" width="308.5" height="27"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <color key="textColor" red="0.18889821909999999" green="1" blue="0.90509767600000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNL-bl-tUM">
-                                <rect key="frame" x="111.5" y="549" width="152" height="33"/>
+                                <rect key="frame" x="436" y="1284" width="152" height="33"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="152" id="6KN-iM-cKX"/>
                                     <constraint firstAttribute="height" constant="33" id="zQR-YX-da9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -115,8 +110,9 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOGA HERO CHALLENGE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MdR-I8-Mzp">
-                                <rect key="frame" x="29" y="20" width="316.5" height="30"/>
+                                <rect key="frame" x="380.5" y="20" width="263.5" height="30"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="263.5" id="aFT-ZB-Puq"/>
                                     <constraint firstAttribute="height" constant="30" id="nZm-B9-4KL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
@@ -124,28 +120,41 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="yogaone" translatesAutoresizingMaskIntoConstraints="NO" id="W1c-Jr-sJG">
-                                <rect key="frame" x="16" y="58" width="343" height="413"/>
+                                <rect key="frame" x="16" y="58" width="992" height="1092"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGJ-NF-R7o">
+                                <rect key="frame" x="497" y="1226" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ntm-Qe-IDc"/>
+                                </constraints>
+                                <state key="normal" title="Go"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pose Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9W-F1-Ie5">
+                                <rect key="frame" x="424.5" y="1158" width="175" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="8Pb-Is-h3K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.18889821909999999" green="1" blue="0.90509767600000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="W1c-Jr-sJG" firstAttribute="top" secondItem="MdR-I8-Mzp" secondAttribute="bottom" constant="8" id="BKS-2B-Vir"/>
-                            <constraint firstItem="vzE-GN-4Fz" firstAttribute="trailing" secondItem="W1c-Jr-sJG" secondAttribute="trailing" constant="16" id="EWn-qQ-cT5"/>
-                            <constraint firstItem="vzE-GN-4Fz" firstAttribute="trailing" secondItem="x9W-F1-Ie5" secondAttribute="trailing" constant="33" id="KF9-IV-mct"/>
-                            <constraint firstItem="x9W-F1-Ie5" firstAttribute="centerX" secondItem="4my-ds-QIE" secondAttribute="centerX" id="LDt-L4-1nK"/>
-                            <constraint firstItem="vzE-GN-4Fz" firstAttribute="bottom" secondItem="XNL-bl-tUM" secondAttribute="bottom" constant="41" id="QDM-t2-nlY"/>
-                            <constraint firstItem="MdR-I8-Mzp" firstAttribute="top" secondItem="vzE-GN-4Fz" secondAttribute="top" id="QiP-Sy-Ibe"/>
-                            <constraint firstItem="MdR-I8-Mzp" firstAttribute="centerX" secondItem="4my-ds-QIE" secondAttribute="centerX" id="Qu4-wo-g1O"/>
-                            <constraint firstItem="XNL-bl-tUM" firstAttribute="centerX" secondItem="4my-ds-QIE" secondAttribute="centerX" id="TDi-mb-sq9"/>
-                            <constraint firstItem="x9W-F1-Ie5" firstAttribute="top" secondItem="W1c-Jr-sJG" secondAttribute="bottom" constant="8" id="UxR-aD-x27"/>
-                            <constraint firstItem="XNL-bl-tUM" firstAttribute="leading" secondItem="vzE-GN-4Fz" secondAttribute="leading" constant="111.5" id="XA1-C6-OfK"/>
-                            <constraint firstItem="W1c-Jr-sJG" firstAttribute="leading" secondItem="vzE-GN-4Fz" secondAttribute="leading" constant="16" id="cJ9-0J-YEj"/>
-                            <constraint firstItem="MdR-I8-Mzp" firstAttribute="leading" secondItem="vzE-GN-4Fz" secondAttribute="leading" constant="29" id="dT9-Zp-ihA"/>
-                            <constraint firstItem="W1c-Jr-sJG" firstAttribute="centerX" secondItem="4my-ds-QIE" secondAttribute="centerX" id="gvg-Jw-oa6"/>
-                            <constraint firstItem="XNL-bl-tUM" firstAttribute="top" secondItem="x9W-F1-Ie5" secondAttribute="bottom" constant="43.5" id="kvR-Yr-cV2"/>
-                            <constraint firstItem="vzE-GN-4Fz" firstAttribute="trailing" secondItem="MdR-I8-Mzp" secondAttribute="trailing" constant="29.5" id="nbH-Wv-Kvg"/>
-                            <constraint firstItem="vzE-GN-4Fz" firstAttribute="trailing" secondItem="XNL-bl-tUM" secondAttribute="trailing" constant="111.5" id="u5J-r4-4kF"/>
-                            <constraint firstItem="x9W-F1-Ie5" firstAttribute="leading" secondItem="vzE-GN-4Fz" secondAttribute="leading" constant="33.5" id="xM7-jt-ALI"/>
+                            <constraint firstItem="XNL-bl-tUM" firstAttribute="top" secondItem="cGJ-NF-R7o" secondAttribute="bottom" constant="28" id="5pd-bo-OE4"/>
+                            <constraint firstItem="XNL-bl-tUM" firstAttribute="centerX" secondItem="4my-ds-QIE" secondAttribute="centerX" id="E9h-Ca-xtP"/>
+                            <constraint firstItem="cGJ-NF-R7o" firstAttribute="top" secondItem="x9W-F1-Ie5" secondAttribute="bottom" constant="41" id="MhA-No-BNB"/>
+                            <constraint firstItem="W1c-Jr-sJG" firstAttribute="centerX" secondItem="4my-ds-QIE" secondAttribute="centerX" id="O1Q-3t-7Th"/>
+                            <constraint firstItem="MdR-I8-Mzp" firstAttribute="centerX" secondItem="4my-ds-QIE" secondAttribute="centerX" id="Ou8-o7-rGt"/>
+                            <constraint firstItem="vzE-GN-4Fz" firstAttribute="trailing" secondItem="W1c-Jr-sJG" secondAttribute="trailing" constant="16" id="X9G-nK-D7V"/>
+                            <constraint firstItem="W1c-Jr-sJG" firstAttribute="top" secondItem="MdR-I8-Mzp" secondAttribute="bottom" constant="8" id="ZJK-hg-KBy"/>
+                            <constraint firstItem="x9W-F1-Ie5" firstAttribute="centerX" secondItem="4my-ds-QIE" secondAttribute="centerX" id="jPf-14-TvU"/>
+                            <constraint firstItem="W1c-Jr-sJG" firstAttribute="leading" secondItem="vzE-GN-4Fz" secondAttribute="leading" constant="16" id="niv-bu-j64"/>
+                            <constraint firstItem="MdR-I8-Mzp" firstAttribute="top" secondItem="vzE-GN-4Fz" secondAttribute="top" id="oew-aB-6Rl"/>
+                            <constraint firstItem="cGJ-NF-R7o" firstAttribute="top" secondItem="x9W-F1-Ie5" secondAttribute="bottom" constant="41" id="pAZ-IC-KpH"/>
+                            <constraint firstItem="cGJ-NF-R7o" firstAttribute="centerX" secondItem="4my-ds-QIE" secondAttribute="centerX" id="pw2-nM-DM5"/>
+                            <constraint firstItem="x9W-F1-Ie5" firstAttribute="top" secondItem="W1c-Jr-sJG" secondAttribute="bottom" constant="8" id="q3U-df-dRZ"/>
+                            <constraint firstItem="vzE-GN-4Fz" firstAttribute="bottom" secondItem="XNL-bl-tUM" secondAttribute="bottom" constant="5" id="uZP-Z1-87Y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vzE-GN-4Fz"/>
                     </view>
