@@ -77,7 +77,9 @@ class SecondViewController: UIViewController {
         // start reading
         var keepSteady = 0
         let when = DispatchTime.now() + 5
+        self.gameStateLabel.text = "You have 5 seconds to prepare."
         DispatchQueue.main.asyncAfter(deadline: when){
+            
             self.motionManager.startDeviceMotionUpdates(to: self.opQueue) {
                 (data: CMDeviceMotion?, error: Error?) in
                 if let mydata = data {
@@ -118,6 +120,7 @@ class SecondViewController: UIViewController {
                         DispatchQueue.main.async {
                             self.gameStateLabel.text = "You Got it"
                             self.motionManager.stopDeviceMotionUpdates()
+                            
                         }
                     }
                 }
