@@ -29,35 +29,30 @@ class ViewController: UIViewController {
     
     
     @IBAction func buttonPressed(_ sender: UIButton){
-        if containsAudioHard{
-            audioPlayer.play()
-        }
-        
-       performSegue(withIdentifier: "segue", sender: self)
+        audioPlayer.play()
+        performSegue(withIdentifier: "segue", sender: self)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        do{
+            containsAudioHard = true
+            audioPlayer = try AVAudioPlayer(contentsOf:URL.init(fileURLWithPath:  Bundle.main.path(forResource: "backgroundMusic", ofType: "m4a")!))
+            audioPlayer.prepareToPlay()
+            audioPlayer.play()
+        }catch{
+            print(error)
+        }
         // Do any additional setup after loading the view, typically from a nib.
         if motionManager.isDeviceMotionAvailable {
             print("We can detect device motion")
-            do{
-                containsAudioHard = true
-                audioPlayer = try AVAudioPlayer(contentsOf:URL.init(fileURLWithPath:  Bundle.main.path(forResource: "backgroundMusic", ofType: "m4a")!))
-                audioPlayer.prepareToPlay()
-                audioPlayer.play()
-            }catch{
-                print(error)
-            }
             startReadingMotionData()
         }
         else {
             print("We cannot detect device motion")
         }
-        
     }
 
-    
     func startReadingMotionData() {
         // set read speed
         motionManager.deviceMotionUpdateInterval = 3
@@ -68,7 +63,6 @@ class ViewController: UIViewController {
         var myYaw: Double?
         motionManager.startDeviceMotionUpdates(to: opQueue) {
             (data: CMDeviceMotion?, error: Error?) in
-            
             if let mydata = data {
                 if initial == false {
                     myPitch = self.degrees(mydata.attitude.pitch)
@@ -99,12 +93,4 @@ class ViewController: UIViewController {
     func degrees(_ radians: Double) -> Double {
         return 180/Double.pi * radians
     }
-    
 }
-       
-
-
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-//        // Dispose of any resources that can be recreated.
-//    }
