@@ -68,7 +68,9 @@ class SecondViewController: UIViewController {
     }
     func startReadingMotionData() {
         // set read speed
-        motionManager.deviceMotionUpdateInterval = 3
+        motionManager.deviceMotionUpdateInterval = 1
+        self.motionManager.accelerometerUpdateInterval = 1.0 / 60.0  // 60 Hz
+        self.motionManager.startAccelerometerUpdates()
         // start reading
         var initial = false
         var myPitch: Double?
