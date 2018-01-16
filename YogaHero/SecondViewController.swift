@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreMotion
+import AudioToolbox
 
 class SecondViewController: UIViewController {
     
@@ -17,11 +18,11 @@ class SecondViewController: UIViewController {
     var challengeCount = 1
     let poses = [
         
-        ("yogaone","place phone on your hand face-up"),
-        ("yogatwo", "place phone between your hands"),
-        ("yogafive", "place phone on your non-dominant hand face-up"),
-        ("yogaeight","place phone on your stomach"),
-        ("yoganine", "place phone on your knee")
+        ("yogaone","place phone on your hand face-up","flat"),
+        ("yogatwo", "place phone between your hands","vertical"),
+        ("yogafive", "place phone on your non-dominant hand face-up","flat"),
+        ("yogaeight","place phone on your stomach","flat"),
+        ("yoganine", "place phone on your knee","flat")
     ]
     
     
@@ -93,12 +94,19 @@ class SecondViewController: UIViewController {
                     if abs(myRoll! - self.degrees(mydata.attitude.roll)) > 4 {
                         print ("Roll", self.degrees(mydata.attitude.roll))
                         keepSteady += 1
+                        DispatchQueue.main.async {
+                            self.gameStateLabel.text = "You have held it for \(keepSteady) seconds."
+                        }
                     }
                     if abs(myYaw! - self.degrees(mydata.attitude.yaw)) > 4 {
                         print ("Yaw", self.degrees(mydata.attitude.yaw))
                     } else {
                         print ("No change detected")
                         keepSteady = 0
+                        AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
+                        DispatchQueue.main.async {
+                            self.gameStateLabel.text = "Keeo it straightefr"
+                        }
                     }
                 }
                 if keepSteady >= 10{
