@@ -68,7 +68,7 @@ class SecondViewController: UIViewController {
     }
     func startReadingMotionData() {
         // set read speed
-        motionManager.deviceMotionUpdateInterval = 3
+        motionManager.deviceMotionUpdateInterval = 1
         // start reading
         var initial = false
         var myPitch: Double?
@@ -88,24 +88,25 @@ class SecondViewController: UIViewController {
                     print ("Roll: ", self.degrees(mydata.attitude.roll))
                     print ("Yaw: ", self.degrees(mydata.attitude.yaw))
                 } else {
-                    if abs(myPitch! - self.degrees(mydata.attitude.pitch)) > 4 {
-                        print ("Pitch", self.degrees(mydata.attitude.pitch))
-                    }
-                    if abs(myRoll! - self.degrees(mydata.attitude.roll)) > 4 {
+//                    if abs(myPitch! - self.degrees(mydata.attitude.pitch)) > 4 {
+//                        print ("Pitch", self.degrees(mydata.attitude.pitch))
+//                    }
+                    if abs(myRoll! - self.degrees(mydata.attitude.roll)) < 4 {
                         print ("Roll", self.degrees(mydata.attitude.roll))
                         keepSteady += 1
                         DispatchQueue.main.async {
                             self.gameStateLabel.text = "You have held it for \(keepSteady) seconds."
                         }
                     }
-                    if abs(myYaw! - self.degrees(mydata.attitude.yaw)) > 4 {
-                        print ("Yaw", self.degrees(mydata.attitude.yaw))
-                    } else {
+//                    if abs(myYaw! - self.degrees(mydata.attitude.yaw)) > 4 {
+//                        print ("Yaw", self.degrees(mydata.attitude.yaw))
+//                    }
+                    else {
                         print ("No change detected")
                         keepSteady = 0
                         AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
                         DispatchQueue.main.async {
-                            self.gameStateLabel.text = "Keeo it straightefr"
+                            self.gameStateLabel.text = "Keep it straight"
                         }
                     }
                 }
