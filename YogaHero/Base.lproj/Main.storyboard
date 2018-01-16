@@ -128,6 +128,9 @@
                                     <constraint firstAttribute="height" constant="30" id="Ntm-Qe-IDc"/>
                                 </constraints>
                                 <state key="normal" title="Go"/>
+                                <connections>
+                                    <action selector="playButton:" destination="8wD-9b-szx" eventType="touchUpInside" id="Mav-36-JAw"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pose Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9W-F1-Ie5">
                                 <rect key="frame" x="424.5" y="1158" width="175" height="27"/>

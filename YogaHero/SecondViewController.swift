@@ -25,6 +25,9 @@ class SecondViewController: UIViewController {
         ("yoganine", "place phone on your knee","flat")
     ]
     
+    @IBAction func playButton(_ sender: UIButton) {
+        startReadingMotionData()
+    }
     
     
     var poseIndex = 0
@@ -46,13 +49,12 @@ class SecondViewController: UIViewController {
         }
         updateUI()
         motionManager.stopDeviceMotionUpdates()
-        startReadingMotionData()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
-        startReadingMotionData()
+        
         
         // Do any additional setup after loading the view.
     }
@@ -74,46 +76,49 @@ class SecondViewController: UIViewController {
         self.motionManager.startAccelerometerUpdates()
         // start reading
         var keepSteady = 0
-        motionManager.startDeviceMotionUpdates(to: opQueue) {
-            (data: CMDeviceMotion?, error: Error?) in
-            if let mydata = data {
-                if self.poses[self.poseIndex].2 == "flat" {
-                    if abs(self.degrees(mydata.attitude.roll)) < 4 {
-                        print ("Roll", self.degrees(mydata.attitude.roll))
-                        keepSteady += 1
-                        DispatchQueue.main.async {
-                            self.gameStateLabel.text = "You have held it for \(keepSteady) seconds."
+        let when = DispatchTime.now() + 5
+        DispatchQueue.main.asyncAfter(deadline: when){
+            self.motionManager.startDeviceMotionUpdates(to: self.opQueue) {
+                (data: CMDeviceMotion?, error: Error?) in
+                if let mydata = data {
+                    if self.poses[self.poseIndex].2 == "flat" {
+                        if abs(self.degrees(mydata.attitude.roll)) < 4 {
+                            print ("Roll", self.degrees(mydata.attitude.roll))
+                            keepSteady += 1
+                            DispatchQueue.main.async {
+                                self.gameStateLabel.text = "You have held it for \(keepSteady) seconds."
+                            }
+                        }
+                        else {
+                            keepSteady = 0
+                            AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
+                            DispatchQueue.main.async {
+                                self.gameStateLabel.text = "Keep it straight"
+                            }
                         }
                     }
-                    else {
-                        print ("No change detected")
-                        keepSteady = 0
-                        AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
-                        DispatchQueue.main.async {
-                            self.gameStateLabel.text = "Keep it straight"
+                    if self.poses[self.poseIndex].2 == "vertical" {
+                        if abs(self.degrees(mydata.attitude.pitch)) > 85{
+                            print ("Roll", self.degrees(mydata.attitude.pitch),self.degrees(mydata.attitude.yaw) )
+                            keepSteady += 1
+                            DispatchQueue.main.async {
+                                self.gameStateLabel.text = "You have held it for \(keepSteady) seconds."
+                            }
+                        }
+                        else {
+                            print ("Roll", self.degrees(mydata.attitude.pitch),self.degrees(mydata.attitude.yaw) )
+                            keepSteady = 0
+                            AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
+                            DispatchQueue.main.async {
+                                self.gameStateLabel.text = "Keep it straight"
+                            }
                         }
                     }
-                }
-                if self.poses[self.poseIndex].2 == "vertical" {
-                    if abs(self.degrees(mydata.attitude.pitch)) > 85{
-                        print ("Roll", self.degrees(mydata.attitude.pitch),self.degrees(mydata.attitude.yaw) )
-                        keepSteady += 1
+                    if keepSteady >= 10{
                         DispatchQueue.main.async {
-                            self.gameStateLabel.text = "You have held it for \(keepSteady) seconds."
+                            self.gameStateLabel.text = "You Got it"
+                            self.motionManager.stopDeviceMotionUpdates()
                         }
-                    }
-                    else {
-                        print ("Roll", self.degrees(mydata.attitude.pitch),self.degrees(mydata.attitude.yaw) )
-                        keepSteady = 0
-                        AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
-                        DispatchQueue.main.async {
-                            self.gameStateLabel.text = "Keep it straight"
-                        }
-                    }
-                }
-                if keepSteady >= 10{
-                    DispatchQueue.main.async {
-                        self.gameStateLabel.text = "You Got it"
                     }
                 }
             }

@@ -11,7 +11,7 @@ import AVFoundation
 
 var audioPlayer = AVAudioPlayer()
 
-class ViewController: UIViewContro`ller {
+class ViewController: UIViewController {
 
     @IBOutlet weak var gameNameLabel: UILabel!
     

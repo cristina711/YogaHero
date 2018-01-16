@@ -1,343 +1,343 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 48;
-	objects = {
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 48;
+    objects = {
 
 /* Begin PBXBuildFile section */
-		652A6F8A200AEFCE00ED6F7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652A6F89200AEFCE00ED6F7E /* AppDelegate.swift */; };
-		652A6F8C200AEFCE00ED6F7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652A6F8B200AEFCE00ED6F7E /* ViewController.swift */; };
-		652A6F8F200AEFCE00ED6F7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652A6F8D200AEFCE00ED6F7E /* Main.storyboard */; };
-		652A6F91200AEFCE00ED6F7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 652A6F90200AEFCE00ED6F7E /* Assets.xcassets */; };
-		652A6F94200AEFCE00ED6F7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652A6F92200AEFCE00ED6F7E /* LaunchScreen.storyboard */; };
-		652A6FA0200B431E00ED6F7E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652A6F9F200B431E00ED6F7E /* SecondViewController.swift */; };
-		65368C1F200D64750039D686 /* backgroundMusic.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 65368C1E200D644E0039D686 /* backgroundMusic.m4a */; };
+        652A6F8A200AEFCE00ED6F7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652A6F89200AEFCE00ED6F7E /* AppDelegate.swift */; };
+        652A6F8C200AEFCE00ED6F7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652A6F8B200AEFCE00ED6F7E /* ViewController.swift */; };
+        652A6F8F200AEFCE00ED6F7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652A6F8D200AEFCE00ED6F7E /* Main.storyboard */; };
+        652A6F91200AEFCE00ED6F7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 652A6F90200AEFCE00ED6F7E /* Assets.xcassets */; };
+        652A6F94200AEFCE00ED6F7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652A6F92200AEFCE00ED6F7E /* LaunchScreen.storyboard */; };
+        652A6FA0200B431E00ED6F7E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652A6F9F200B431E00ED6F7E /* SecondViewController.swift */; };
+        65368C1F200D64750039D686 /* backgroundMusic.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 65368C1E200D644E0039D686 /* backgroundMusic.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		652A6F86200AEFCE00ED6F7E /* YogaHero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YogaHero.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		652A6F89200AEFCE00ED6F7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		652A6F8B200AEFCE00ED6F7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		652A6F8E200AEFCE00ED6F7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		652A6F90200AEFCE00ED6F7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		652A6F93200AEFCE00ED6F7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		652A6F95200AEFCE00ED6F7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		652A6F9F200B431E00ED6F7E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		65368C1E200D644E0039D686 /* backgroundMusic.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = backgroundMusic.m4a; sourceTree = "<group>"; };
+        652A6F86200AEFCE00ED6F7E /* YogaHero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YogaHero.app; sourceTree = BUILT_PRODUCTS_DIR; };
+        652A6F89200AEFCE00ED6F7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+        652A6F8B200AEFCE00ED6F7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+        652A6F8E200AEFCE00ED6F7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+        652A6F90200AEFCE00ED6F7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+        652A6F93200AEFCE00ED6F7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+        652A6F95200AEFCE00ED6F7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        652A6F9F200B431E00ED6F7E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+        65368C1E200D644E0039D686 /* backgroundMusic.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = backgroundMusic.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		652A6F83200AEFCE00ED6F7E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        652A6F83200AEFCE00ED6F7E /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		652A6F7D200AEFCE00ED6F7E = {
-			isa = PBXGroup;
-			children = (
-				652A6F88200AEFCE00ED6F7E /* YogaHero */,
-				652A6F87200AEFCE00ED6F7E /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		652A6F87200AEFCE00ED6F7E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				652A6F86200AEFCE00ED6F7E /* YogaHero.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		652A6F88200AEFCE00ED6F7E /* YogaHero */ = {
-			isa = PBXGroup;
-			children = (
-				652A6F89200AEFCE00ED6F7E /* AppDelegate.swift */,
-				652A6F8B200AEFCE00ED6F7E /* ViewController.swift */,
-				652A6F9F200B431E00ED6F7E /* SecondViewController.swift */,
-				652A6F8D200AEFCE00ED6F7E /* Main.storyboard */,
-				652A6F90200AEFCE00ED6F7E /* Assets.xcassets */,
-				652A6F92200AEFCE00ED6F7E /* LaunchScreen.storyboard */,
-				652A6F95200AEFCE00ED6F7E /* Info.plist */,
-				65368C1D200D642E0039D686 /* Music1 */,
-			);
-			path = YogaHero;
-			sourceTree = "<group>";
-		};
-		65368C1D200D642E0039D686 /* Music1 */ = {
-			isa = PBXGroup;
-			children = (
-				65368C1E200D644E0039D686 /* backgroundMusic.m4a */,
-			);
-			path = Music1;
-			sourceTree = "<group>";
-		};
+        652A6F7D200AEFCE00ED6F7E = {
+            isa = PBXGroup;
+            children = (
+                652A6F88200AEFCE00ED6F7E /* YogaHero */,
+                652A6F87200AEFCE00ED6F7E /* Products */,
+            );
+            sourceTree = "<group>";
+        };
+        652A6F87200AEFCE00ED6F7E /* Products */ = {
+            isa = PBXGroup;
+            children = (
+                652A6F86200AEFCE00ED6F7E /* YogaHero.app */,
+            );
+            name = Products;
+            sourceTree = "<group>";
+        };
+        652A6F88200AEFCE00ED6F7E /* YogaHero */ = {
+            isa = PBXGroup;
+            children = (
+                652A6F89200AEFCE00ED6F7E /* AppDelegate.swift */,
+                652A6F8B200AEFCE00ED6F7E /* ViewController.swift */,
+                652A6F9F200B431E00ED6F7E /* SecondViewController.swift */,
+                652A6F8D200AEFCE00ED6F7E /* Main.storyboard */,
+                652A6F90200AEFCE00ED6F7E /* Assets.xcassets */,
+                652A6F92200AEFCE00ED6F7E /* LaunchScreen.storyboard */,
+                652A6F95200AEFCE00ED6F7E /* Info.plist */,
+                65368C1D200D642E0039D686 /* Music1 */,
+            );
+            path = YogaHero;
+            sourceTree = "<group>";
+        };
+        65368C1D200D642E0039D686 /* Music1 */ = {
+            isa = PBXGroup;
+            children = (
+                65368C1E200D644E0039D686 /* backgroundMusic.m4a */,
+            );
+            path = Music1;
+            sourceTree = "<group>";
+        };
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		652A6F85200AEFCE00ED6F7E /* YogaHero */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 652A6F98200AEFCE00ED6F7E /* Build configuration list for PBXNativeTarget "YogaHero" */;
-			buildPhases = (
-				652A6F82200AEFCE00ED6F7E /* Sources */,
-				652A6F83200AEFCE00ED6F7E /* Frameworks */,
-				652A6F84200AEFCE00ED6F7E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = YogaHero;
-			productName = YogaHero;
-			productReference = 652A6F86200AEFCE00ED6F7E /* YogaHero.app */;
-			productType = "com.apple.product-type.application";
-		};
+        652A6F85200AEFCE00ED6F7E /* YogaHero */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 652A6F98200AEFCE00ED6F7E /* Build configuration list for PBXNativeTarget "YogaHero" */;
+            buildPhases = (
+                652A6F82200AEFCE00ED6F7E /* Sources */,
+                652A6F83200AEFCE00ED6F7E /* Frameworks */,
+                652A6F84200AEFCE00ED6F7E /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = YogaHero;
+            productName = YogaHero;
+            productReference = 652A6F86200AEFCE00ED6F7E /* YogaHero.app */;
+            productType = "com.apple.product-type.application";
+        };
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		652A6F7E200AEFCE00ED6F7E /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = "Qian Yang";
-				TargetAttributes = {
-					652A6F85200AEFCE00ED6F7E = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-					};
-				};
-			};
-			buildConfigurationList = 652A6F81200AEFCE00ED6F7E /* Build configuration list for PBXProject "YogaHero" */;
-			compatibilityVersion = "Xcode 8.0";
-			developmentRegion = en;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 652A6F7D200AEFCE00ED6F7E;
-			productRefGroup = 652A6F87200AEFCE00ED6F7E /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				652A6F85200AEFCE00ED6F7E /* YogaHero */,
-			);
-		};
+        652A6F7E200AEFCE00ED6F7E /* Project object */ = {
+            isa = PBXProject;
+            attributes = {
+                LastSwiftUpdateCheck = 0920;
+                LastUpgradeCheck = 0920;
+                ORGANIZATIONNAME = "Qian Yang";
+                TargetAttributes = {
+                    652A6F85200AEFCE00ED6F7E = {
+                        CreatedOnToolsVersion = 9.2;
+                        ProvisioningStyle = Automatic;
+                    };
+                };
+            };
+            buildConfigurationList = 652A6F81200AEFCE00ED6F7E /* Build configuration list for PBXProject "YogaHero" */;
+            compatibilityVersion = "Xcode 8.0";
+            developmentRegion = en;
+            hasScannedForEncodings = 0;
+            knownRegions = (
+                en,
+                Base,
+            );
+            mainGroup = 652A6F7D200AEFCE00ED6F7E;
+            productRefGroup = 652A6F87200AEFCE00ED6F7E /* Products */;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                652A6F85200AEFCE00ED6F7E /* YogaHero */,
+            );
+        };
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		652A6F84200AEFCE00ED6F7E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				65368C1F200D64750039D686 /* backgroundMusic.m4a in Resources */,
-				652A6F94200AEFCE00ED6F7E /* LaunchScreen.storyboard in Resources */,
-				652A6F91200AEFCE00ED6F7E /* Assets.xcassets in Resources */,
-				652A6F8F200AEFCE00ED6F7E /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        652A6F84200AEFCE00ED6F7E /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                65368C1F200D64750039D686 /* backgroundMusic.m4a in Resources */,
+                652A6F94200AEFCE00ED6F7E /* LaunchScreen.storyboard in Resources */,
+                652A6F91200AEFCE00ED6F7E /* Assets.xcassets in Resources */,
+                652A6F8F200AEFCE00ED6F7E /* Main.storyboard in Resources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		652A6F82200AEFCE00ED6F7E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				652A6FA0200B431E00ED6F7E /* SecondViewController.swift in Sources */,
-				652A6F8C200AEFCE00ED6F7E /* ViewController.swift in Sources */,
-				652A6F8A200AEFCE00ED6F7E /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        652A6F82200AEFCE00ED6F7E /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                652A6FA0200B431E00ED6F7E /* SecondViewController.swift in Sources */,
+                652A6F8C200AEFCE00ED6F7E /* ViewController.swift in Sources */,
+                652A6F8A200AEFCE00ED6F7E /* AppDelegate.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		652A6F8D200AEFCE00ED6F7E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				652A6F8E200AEFCE00ED6F7E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		652A6F92200AEFCE00ED6F7E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				652A6F93200AEFCE00ED6F7E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
+        652A6F8D200AEFCE00ED6F7E /* Main.storyboard */ = {
+            isa = PBXVariantGroup;
+            children = (
+                652A6F8E200AEFCE00ED6F7E /* Base */,
+            );
+            name = Main.storyboard;
+            sourceTree = "<group>";
+        };
+        652A6F92200AEFCE00ED6F7E /* LaunchScreen.storyboard */ = {
+            isa = PBXVariantGroup;
+            children = (
+                652A6F93200AEFCE00ED6F7E /* Base */,
+            );
+            name = LaunchScreen.storyboard;
+            sourceTree = "<group>";
+        };
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		652A6F96200AEFCE00ED6F7E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		652A6F97200AEFCE00ED6F7E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		652A6F99200AEFCE00ED6F7E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E2GWRD8VU6;
-				INFOPLIST_FILE = YogaHero/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.YogaHero;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		652A6F9A200AEFCE00ED6F7E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E2GWRD8VU6;
-				INFOPLIST_FILE = YogaHero/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.YogaHero;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
+        652A6F96200AEFCE00ED6F7E /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ANALYZER_NONNULL = YES;
+                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_COMMA = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+                CLANG_WARN_STRICT_PROTOTYPES = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                COPY_PHASE_STRIP = NO;
+                DEBUG_INFORMATION_FORMAT = dwarf;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                ENABLE_TESTABILITY = YES;
+                GCC_C_LANGUAGE_STANDARD = gnu11;
+                GCC_DYNAMIC_NO_PIC = NO;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_OPTIMIZATION_LEVEL = 0;
+                GCC_PREPROCESSOR_DEFINITIONS = (
+                    "DEBUG=1",
+                    "$(inherited)",
+                );
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+                MTL_ENABLE_DEBUG_INFO = YES;
+                ONLY_ACTIVE_ARCH = YES;
+                SDKROOT = iphoneos;
+                SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+                SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+            };
+            name = Debug;
+        };
+        652A6F97200AEFCE00ED6F7E /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ANALYZER_NONNULL = YES;
+                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_COMMA = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+                CLANG_WARN_STRICT_PROTOTYPES = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                COPY_PHASE_STRIP = NO;
+                DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+                ENABLE_NS_ASSERTIONS = NO;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                GCC_C_LANGUAGE_STANDARD = gnu11;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+                MTL_ENABLE_DEBUG_INFO = NO;
+                SDKROOT = iphoneos;
+                SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+                VALIDATE_PRODUCT = YES;
+            };
+            name = Release;
+        };
+        652A6F99200AEFCE00ED6F7E /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = E2GWRD8VU6;
+                INFOPLIST_FILE = YogaHero/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+                PRODUCT_BUNDLE_IDENTIFIER = com.YogaHero;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+            };
+            name = Debug;
+        };
+        652A6F9A200AEFCE00ED6F7E /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = E2GWRD8VU6;
+                INFOPLIST_FILE = YogaHero/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+                PRODUCT_BUNDLE_IDENTIFIER = com.YogaHero;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+            };
+            name = Release;
+        };
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		652A6F81200AEFCE00ED6F7E /* Build configuration list for PBXProject "YogaHero" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				652A6F96200AEFCE00ED6F7E /* Debug */,
-				652A6F97200AEFCE00ED6F7E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		652A6F98200AEFCE00ED6F7E /* Build configuration list for PBXNativeTarget "YogaHero" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				652A6F99200AEFCE00ED6F7E /* Debug */,
-				652A6F9A200AEFCE00ED6F7E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
+        652A6F81200AEFCE00ED6F7E /* Build configuration list for PBXProject "YogaHero" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                652A6F96200AEFCE00ED6F7E /* Debug */,
+                652A6F97200AEFCE00ED6F7E /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        652A6F98200AEFCE00ED6F7E /* Build configuration list for PBXNativeTarget "YogaHero" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                652A6F99200AEFCE00ED6F7E /* Debug */,
+                652A6F9A200AEFCE00ED6F7E /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
 /* End XCConfigurationList section */
-	};
-	rootObject = 652A6F7E200AEFCE00ED6F7E /* Project object */;
+    };
+    rootObject = 652A6F7E200AEFCE00ED6F7E /* Project object */;
 }
