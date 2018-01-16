@@ -50,6 +50,7 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
+        startReadingMotionData()
         
         // Do any additional setup after loading the view.
     }
@@ -64,5 +65,53 @@ class SecondViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    func startReadingMotionData() {
+        // set read speed
+        motionManager.deviceMotionUpdateInterval = 3
+        // start reading
+        var initial = false
+        var myPitch: Double?
+        var myRoll: Double?
+        var myYaw: Double?
+        var keepSteady = 0
+        motionManager.startDeviceMotionUpdates(to: opQueue) {
+            (data: CMDeviceMotion?, error: Error?) in
+            
+            if let mydata = data {
+                if initial == false {
+                    myPitch = self.degrees(mydata.attitude.pitch)
+                    myRoll = self.degrees(mydata.attitude.roll)
+                    myYaw = self.degrees(mydata.attitude.yaw)
+                    initial = true
+                    print ("Pitch: ", self.degrees(mydata.attitude.pitch))
+                    print ("Roll: ", self.degrees(mydata.attitude.roll))
+                    print ("Yaw: ", self.degrees(mydata.attitude.yaw))
+                } else {
+                    if abs(myPitch! - self.degrees(mydata.attitude.pitch)) > 4 {
+                        print ("Pitch", self.degrees(mydata.attitude.pitch))
+                    }
+                    if abs(myRoll! - self.degrees(mydata.attitude.roll)) > 4 {
+                        print ("Roll", self.degrees(mydata.attitude.roll))
+                        keepSteady += 1
+                    }
+                    if abs(myYaw! - self.degrees(mydata.attitude.yaw)) > 4 {
+                        print ("Yaw", self.degrees(mydata.attitude.yaw))
+                    } else {
+                        print ("No change detected")
+                        keepSteady = 0
+                    }
+                }
+                if keepSteady >= 10{
+                    DispatchQueue.main.async {
+                        self.gameStateLabel.text = "You Got it"
+                    }
+                }
+                
+            }
+        }
+    }
     
+    func degrees(_ radians: Double) -> Double {
+        return 180/Double.pi * radians
+    }
 }
